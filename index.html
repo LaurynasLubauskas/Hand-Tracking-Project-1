@@ -9,6 +9,18 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
 
+    <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleX(-1); /* mirror for selfie view */
+    }
+  </style>
 </head>
 <body>
   <video class="input_video" autoplay></video>
