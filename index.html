@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand Tracking Demo</title>
+
+  <!-- MediaPipe JS libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    video, canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleX(-1); /* mirror for selfie view */
+    }
+  </style>
+</head>
+<body>
+  <video class="input_video" autoplay></video>
+  <canvas class="output_canvas"></canvas>
+
+  <!-- Link your external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
